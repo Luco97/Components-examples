@@ -1,0 +1,105 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* MAINT COLOR: #087f5b */
+/* GRAY COLOR: ##343a40 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.header-container {
+  width: 1200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  /*  */
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.header-container-info {
+  width: 50%;
+}
+
+header {
+  /* background-color: darkcyan; */
+  height: 100vh;
+  position: relative;
+  color: #fff;
+
+  /* Con todas las clases creadas y etiquetas estiladas dentro de header
+      se puede colocar la imagen en esta zona */
+
+  /* Gradiente para hacer imagen 'oscura' */
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0)
+    ),
+    url(./../hero.jpg);
+  background-size: cover;
+}
+
+nav {
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: aqua; */
+}
+
+h1 {
+  font-size: 52px;
+  line-height: 0.95;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 44px;
+  margin-bottom: 48px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 48px;
+}
+
+section {
+  padding: 96px 0;
+  /* background-color: blue; */
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #d39014;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 15px;
+}
